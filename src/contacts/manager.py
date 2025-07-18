@@ -20,3 +20,4 @@ class ContactManager:
         with open(self.csvfilename, "a", newline="", encoding="utf-8") as file:
             writer = csv.DictWriter(file, self.fieldnames)
             writer.writerow(contact.to_dict())
+            self.contacts.append(contact)
