@@ -11,6 +11,7 @@ class ContactManager:
     def __init__(self, csvfilename: str, fieldnames: list[str]):
         self.csvfilename: str = csvfilename
         self.fieldnames: list[str] = fieldnames
+        self.contacts: list[Contact] = []
 
     def add(self, contact: Contact):
         """
