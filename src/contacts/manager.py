@@ -8,9 +8,9 @@ class ContactManager:
     """
     Represents a manager for a list of contacts.
     """
-    def __init__(self, csvfilename: str, fieldnames: list):
+    def __init__(self, csvfilename: str, fieldnames: list[str]):
         self.csvfilename: str = csvfilename
-        self.fieldnames: list = fieldnames
+        self.fieldnames: list[str] = fieldnames
 
     def add(self, contact: Contact):
         """
